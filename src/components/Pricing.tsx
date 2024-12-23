@@ -58,9 +58,12 @@ export const Pricing = () => {
               ))}
             </ul>
 
-            <button className="w-full mt-8 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium 
-                           hover:bg-primary/90 transition-colors duration-200">
-              Start Your Free Trial
+            <button 
+              className="w-full mt-8 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium 
+                           hover:bg-primary/90 transition-colors duration-200"
+              onClick={() => window.location.href = "https://buy.stripe.com/00g7tr5Ly4yR1K88wy"}
+            >
+              Start Now
             </button>
           </div>
         </motion.div>
