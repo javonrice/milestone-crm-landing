@@ -31,9 +31,9 @@ export const Pricing = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="bg-white rounded-2xl shadow-lg overflow-hidden"
+          className="bg-accent rounded-2xl shadow-lg overflow-hidden"
         >
-          <div className="p-8 md:p-12 border-b">
+          <div className="p-8 md:p-12 border-b border-border">
             <div className="flex items-center justify-center mb-4">
               <span className="text-5xl font-bold">$155</span>
               <span className="text-muted-foreground ml-2">/month</span>
@@ -58,7 +58,7 @@ export const Pricing = () => {
               ))}
             </ul>
 
-            <button className="w-full mt-8 bg-primary text-white px-6 py-3 rounded-lg font-medium 
+            <button className="w-full mt-8 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium 
                            hover:bg-primary/90 transition-colors duration-200">
               Start Your Free Trial
             </button>

@@ -5,6 +5,19 @@ export const Hero = () => {
   return (
     <section className="min-h-[80vh] flex items-center justify-center px-4">
       <div className="max-w-4xl mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-8"
+        >
+          <img 
+            src="/lovable-uploads/8c7f9da8-3429-4b5c-ac3d-87e3e3913a19.png" 
+            alt="Milestone CRM Logo" 
+            className="h-20 mx-auto"
+          />
+        </motion.div>
+        
         <motion.span 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,7 +52,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <button 
-            className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium 
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium 
                      hover:bg-primary/90 transition-colors duration-200"
             onClick={() => window.location.href = "#pricing"}
           >
